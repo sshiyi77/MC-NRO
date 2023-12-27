@@ -33,7 +33,7 @@ class NRO:
     def __init__(self, k1=1, k2=1, gamma=1.0, p_norm=2, regions='S', n_samples=500,
                  cleaning_strategy='translate and remove', selection_strategy='proportional',
                  minority_class=None, n=None):
-        assert cleaning_strategy in ['translate + remove', 'translate', 'remove']
+        assert cleaning_strategy in ['translate and remove', 'translate', 'remove']
         assert selection_strategy in ['proportional', 'random']
 
         self.k1 = k1
